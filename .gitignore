@@ -1,0 +1,23 @@
+# Generated pipeline outputs (29 GB when full; regenerate with slurm/launch-pipeline.sh)
+outputs/
+logs/
+*.log
+
+# Downloaded pulsar data (pixi run fetch-data)
+data/psrs/*.feather
+
+# Environments and caches
+.pixi/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# Notebooks are generated from jupytext .py sources
+*.ipynb
+.ropeproject/
+
+# Rendered figures
+figs/*.png
+figs/*.pdf
